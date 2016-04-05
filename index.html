@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Xorrito's Game of Life - Cell Edition</title>
+<link href="index.css" rel="stylesheet">
+<script src="index.js"></script>
+</head>
+<body onload="start();">
+	<nav>
+		<div class="auto">	
+			<input type="checkbox" id="auto" name="auto" />
+			<label for="auto"></label>
+		</div>
+		<button onclick="limitchange()">Reset</button>
+		<br><br><br>
+		Total Cell's lifes:<br>
+		<label class='arrows'>
+			<select onchange="limitchange();" id="limitrange"></select>
+		</label><br><br>
+		Multiple Division Chance:<br>
+		<label class='arrows'>
+			<select id="chancerange"></select>
+		</label><br>
+	<br>
+		<br>
+	<div id="holder">
+		<div id="possible"></div>
+		<div id='bar'>
+			<div id="generation"></div>
+		</div>
+		<div id='rec_bar'>
+			<div id="record"></div>
+		</div>
+		<div id='alive_bar'>
+				<div id="total"></div>
+		</div>
+	</div>
+</nav>
+<div id="workshop"></div>
+</body>
+</html>

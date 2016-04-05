@@ -1,0 +1,232 @@
+body{
+	background: #9FA8DA;
+}
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: #E8EAF6;
+	border-width: 1px;
+}
+nav{
+	float: left;
+	width: 130px;
+	text-align: center;
+}
+.other{
+	background: #EC407A;
+}
+table{
+	border-style: solid;
+	border-width: 1px;
+	width: 90%;
+	text-align: center;
+}
+td{
+	border-style: solid;
+	border-width: 1px;
+}
+#workshop{
+	float: left;
+	padding: 5px;
+	width: calc(100% - 150px);
+	height: calc(100% - 10px);	
+	overflow: auto;
+}
+span {
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.2);
+  background: #5C6BC0;
+  color: #FCE4EC;
+	float: left;
+	border-style: solid;
+	border-width: 0;
+	border-radius: 50%;
+	width:15px;
+	height:15px;
+	text-align: center;
+	line-height: 15px;
+	font-size: 10px;
+	animation: newcell 1s;
+}
+.zero{
+	background:#EC407A;
+	animation: newcell_last 1s;
+}
+@-webkit-keyframes newcell {
+	from {
+		background: #E8EAF6;
+	}
+	to {
+		background: #5C6BC0;
+	}
+}
+@-webkit-keyframes newcell_last{
+	from {
+		background: #E8EAF6;
+	}
+	to {
+		background: #EC407A;
+	}
+}
+input[type=checkbox] {
+	visibility: hidden;
+}
+.auto {
+	width: 80px;
+	height: 26px;
+	background: #EC407A;
+	margin: 20px auto;
+
+	border-radius: 50px;
+	position: relative;
+
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.auto:after {
+	content: 'OFF';
+	font: 12px/26px Arial, sans-serif;
+	color: #880E4F;
+	position: absolute;
+	right: 10px;
+	z-index: 0;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+}
+
+.auto:before {
+	content: 'ON';
+	font: 12px/26px Arial, sans-serif;
+	color: #FCE4EC;
+	position: absolute;
+	left: 10px;
+	z-index: 0;
+	font-weight: bold;
+}
+
+.auto label {
+	display: block;
+	width: 34px;
+	height: 20px;
+
+	border-radius: 50px;
+
+	transition: all .4s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 1;
+
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+	background: #5C6BC0;
+
+	background: linear-gradient(top, #E8EAF6 0%, #9FA8DA 40%, #5C6BC0 100%);
+}
+
+.auto input[type=checkbox]:checked + label {
+	left: 43px;
+}
+select {
+    padding:3px;
+    margin: 0;
+    border-radius:4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.2);
+    background: #EC407A;
+    color: #FCE4EC;
+    border:none;
+    outline:none;
+    display: inline-block;
+    appearance:none;
+    cursor:pointer;
+    width:90%;
+    text-align: center;
+}
+option {
+	background: #5C6BC0;
+}
+.arrows {position:relative}
+.arrows:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color: #FCE4EC;
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+.arrows:before {
+    content:'';
+    right:6px; top:0;
+    width:20px; height:20px;
+    background: #EC407A;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+button {
+    padding:3px;
+    margin: 0;
+    border-radius:4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.2);
+    background: #EC407A;
+    color: #FCE4EC;
+    border:none;
+    outline:none;
+    display: inline-block;
+    appearance:none;
+    cursor:pointer;
+    width:90%;
+    text-align: center;
+}
+#holder{
+		position: relative;
+    width:85%;
+		height: calc(100% - 280px);
+		left:12px;
+		border-style: dotted solid none none;
+    border-width: 2px 1px 0 0;
+    border-color: #5C6BC0;
+    overflow:hidden;
+}
+#possible{
+		color: #FCE4EC;
+}
+#bar {
+		position: absolute;
+		bottom:0;
+		left:0;
+    border-radius:4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.2);
+    background: #EC407A;
+    color: #FCE4EC;
+    border:none;
+    width:100%;
+    text-align: center;
+}
+#rec_bar{
+		position: absolute;
+		bottom:0;
+		left:20;
+    border-style: solid;
+    border-width: 2px 0 0 0;
+    border-color: #FCE4EC;
+    color: #FCE4EC;
+    width:calc(100% - 40px);
+    text-align: center;
+}
+#alive_bar{
+		position: absolute;
+		bottom:0;
+		left:10;
+    border-radius: 4px 4px 0 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.2);
+    background: #5C6BC0;
+    color: #FCE4EC;
+    border:none;
+    width:calc(100% - 20px);
+    text-align: center;
+}
