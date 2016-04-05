@@ -1,0 +1,35 @@
+# GoL-Ce
+Game Of Life Cell Edition
+
+Inspired by the video uploaded by Veritasium titled "How Long Will You Live?" were it was mentioned that a cell has a finite amount of times that it can divide.
+Were it was noted that it was discovered that it was an averaged of 50 times max.
+
+Along with inspiration from the famous "Game of Life" by John Conway.
+
+I made this 'emulator/simulation' of cell divisions.
+
+Here you get the option to select the max number of live the initial cell has and the percentage change of multiple cells dividing at the same time.
+
+Total amount of possible divisions will be calculated on the bar on the bottom left.
+
+Red bar indicates total amount of cells divided.
+White bar indicates a maximum amount of cells alive at any point of the simulation.
+Blue bar indicates total cells currently alive.
+
+The cells will indicate their lives withing them.
+Red cells are on their last life and will die on the next division.
+Offspring will spawn adjacent to the parent cell and will flash.
+
+
+Cells are randomly selective for division, once they device the parent's and offspring's life goes down by 1.
+
+-----
+future:
+
+	I plan on adding more options and features such as animations using HTML5's canvas.
+
+-----
+Credits:
+
+	Original CSS code of the on/off button is from here: http://cssdeck.com/labs/css-checkbox-styles
+	Original CSS code of the selector menu is from here: http://cssdeck.com/labs/styling-select-box-with-css3
